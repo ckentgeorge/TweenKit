@@ -44,7 +44,7 @@ public class Animation : Equatable {
         return ftAction.duration
     }
     
-    public var elapsedTime: CFTimeInterval = 0
+    public private(set) var elapsedTime: CFTimeInterval = 0
     
     private let action: SchedulableAction!
     
